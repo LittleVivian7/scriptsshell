@@ -1,0 +1,7 @@
+#!/bin/bash
+#ESSE É MEU PRIMEIRO SCRIPT BASH
+cd /
+ls -l
+echo "ESSA FOI A LISTAGEM DE ARQUIVOS E DIRETÓRIOS DENTRO DA RAIZ"
+echo -n "O USUÁRIO LOGADO É "
+whoami
