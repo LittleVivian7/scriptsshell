@@ -11,23 +11,34 @@
 
 #################################
 
-# Pede ao usuário para digitar o nome de usuário
-(zenity --entry --title="Login" --text="Digite o nome de usuário:")
+# Exibe a caixa de diálogo de login
+USERNAME=$(zenity --entry --title "Login" --text "Nome de usuário:")
+PASSWORD=$(zenity --password --title "Login" --text "Senha:")
 
-# Armazena o nome de usuário digitado na variável "username"
-username=$?
-
-# Pede ao usuário para digitar a senha
-password=$(zenity --entry --title="Login" --text="Digite a senha:")
-  
-# Armazena a senha digitada na variável "password"
-password=$?
-
-# Verifica se o nome de usuário é "Vivian" e a senha é "123"
-if [[ "$username" = "Vivian" && "$password" = "123456" ]]; then
+# Verifica se o nome de usuário e senha estão corretos
+if [[ $USERNAME = "Vivian" && $PASSWORD = "123456" ]]; then
     # Exibe uma caixa de mensagem informando que o login foi bem-sucedido
     zenity --info --title="Sucesso" --text="Login bem-sucedido!"
   else
     # Exibe uma caixa de mensagem informando que o login falhou
     zenity --error --title="Falha no login" --text="Nome de usuário ou senha incorretos."
 fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
