@@ -4,12 +4,13 @@
 
 #Nome do script: usuarios.sh
 #Descrição: lista usuarios.
-#Vesão: 1.0
+#Vesão: 2.0
 #Licença:
 #Autor: Viviane dos Santos
-#E-mal:-
+#E-mal:vivian.infotechnology@gmail.com
 
 #################################
+
 # Lê o arquivo /etc/passwd e extrai os nomes de usuário e diretórios de inicialização
 USERS=$(cut -d: -f1,6 /etc/passwd)
 

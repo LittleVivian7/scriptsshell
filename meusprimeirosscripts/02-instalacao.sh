@@ -4,10 +4,10 @@
 
 #Nome do script: instalação.sh
 #Descrição: instalção.sh
-#Vesão: 1.0
+#Vesão: 2.0
 #Licença:
 #Autor:Viviane dos Santos
-#E-mal:-
+#E-mal:vivian.infotechnology@gmail.com
 
 #################################
 
@@ -28,3 +28,4 @@ if ! apt-get dist-upgrade -y; then
 fi
 
 zenity --info --title "Sucesso!" --text "Atualização de pacotes já instalados feita com sucesso."
+
